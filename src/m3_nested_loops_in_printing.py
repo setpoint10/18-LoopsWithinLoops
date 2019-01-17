@@ -214,7 +214,10 @@ def alternating_brackets(m, n):
     # ------------------------------------------------------------------
     for j in range(m-n+1):
         for k in range(m-j):
-            print("[",end="")
+            if k%2==0:
+                print("[",end="")
+            else:
+                print("]",end="")
         print()
 
 
